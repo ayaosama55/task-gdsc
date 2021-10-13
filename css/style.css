@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto Mono', monospace;
-    height: 7000px;
+    height: 10000px;
 }
 * {
     margin: 0;
@@ -186,6 +186,7 @@ body {
     display: flex;
     min-height: 550px;
 }
+@media(max-width:992px){.our-work .work { min-height: 350px; padding:30px 0}}
 .about-us .about >div,
 .our-work .work >div {
     width: 50%;
@@ -253,10 +254,12 @@ body {
 .featured {
     padding: 100px 0 30px;
 }
-.featured .head-content {
+.featured .head-content,
+.our-team .head-content {
     margin-bottom:60px
 }
-.featured .head-content h3 {
+.featured .head-content h3 ,
+.our-team .head-content h3{
     font-size: 40px;
     line-height: 52px;
     font-weight: 400;
@@ -265,7 +268,8 @@ body {
     z-index: 0;
     padding-bottom: 15px;
 }
-.featured .head-content p{
+.featured .head-content p,
+.our-team .head-content p{
     font-size: 16px;
     color: #727272;
     line-height: 28px;
@@ -339,4 +343,106 @@ body {
 @media(max-width: 768px) {
     .our-work .work .work-content .cont{margin-left: 0px}
     .our-work .work .work-content span{font-size: 16px}
+}
+/* end section our work*/
+/* start section our team */
+.our-team {padding:60px 0}
+.our-team .person {
+    margin-bottom: 30px;
+}
+.our-team .person .image {
+    background-size: cover;
+    background-position: center center;
+    min-height: 300px;
+    position: relative;
+}
+.our-team .person .image ul {
+    position: absolute;
+    bottom: 30px;
+    width: 100%; 
+    text-align: center;
+    display:none;
+}
+.our-team .person .image ul li{ 
+    display: inline-block; 
+}
+.our-team .person .image ul li a i {
+    width:40px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 17px;
+    background-color: #615CFD;
+    border-radius: 50%;
+}
+.our-team .person .content h4 {
+    font-size: 20px;
+    color: #1F1F1F;
+    font-weight: 400;
+    margin-bottom: 7px;
+}
+.our-team .person .content span {
+    font-size: 16px;
+    margin-bottom: 0;
+    font-weight: 400;
+    color: #707070;
+}
+@media(max-width: 768px) {
+    .our-team .person .image {min-height:400px}
+}
+/* end section our team */
+/* start testimonials */
+.testimonial {
+    min-height:600px;
+    background-image: url("../images/banner\ \(1\).png");
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    color: #fff
+}
+.testimonial .overlay { 
+    min-height:600px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img { display: inline;}
+.testimonial .carousel { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 1000px;
+}
+.carousel-control i {
+    color: #fff;
+    font-size: 30px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.carousel-control.left {
+    background-image: none;
+    left: -100px;
+}
+.carousel-control.right { right:-100px; background-image:none;}
+.carousel-inner > .item > img {
+    margin-bottom: 40px;
+}
+.carousel-inner .item p {
+    color: #fff;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 1.4;
+    margin: 0 0 10px 0;
+}
+@media(max-width: 767px){
+    .carousel-inner .item p { font-size:15px; letter-spacing: .5px;}
+}
+@media(min-width:992px) and (max-width:1199px) {
+    .testimonial .carousel { min-width:870px}
+}
+@media(min-width:768px) and (max-width:991px) {
+    .testimonial .carousel { min-width:580px}
+}
+@media(max-width:767px) {
+    .testimonial .carousel { min-width:270px}
 }
