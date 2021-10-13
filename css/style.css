@@ -79,6 +79,18 @@ body {
         margin-left: 20px;
     }
 }
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #fff;
+        padding-left:40px
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #615CFD;
+        background-color: transparent;
+    }
+}
+
 /* end navbar */
 
 .header .head {
@@ -115,3 +127,56 @@ body {
     .header .head h1 { font-size: 30px;}
 }
 /* end header */
+/* start section services */
+.services {
+    padding: 100px 0;
+}
+.services .head span { 
+    font-size: 15px;
+    font-weight: bold;
+    color: #615CFD;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    display: block;
+}
+.services .head p { 
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    display: block;
+}
+.services .serv-content {
+    padding: 48px 35px 45px 35px;
+    border: 2px solid #E8E8E8;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition:.3s all ease-in-out;
+}
+.services .serv-content:hover {
+    border: 2px solid #615CFD;
+}
+.services .serv-content h3 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #1F1F1F;
+    margin-top: 29px;
+    margin-bottom: 13px;
+}
+.services .serv-content p {
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 0;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .services .serv-content {
+        padding: 30px 20px;
+    }
+    .services .serv-content h3 {font-size: 20px;}
+}
+@media(max-width: 767px) {
+    .services .head p { font-size: 25px}
+}
+/* end section services */
