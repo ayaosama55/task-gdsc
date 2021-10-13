@@ -181,14 +181,17 @@ body {
 }
 /* end section services */
 /* start about us section */
-.about-us .about {
+.about-us .about,
+.our-work .work {
     display: flex;
-    min-height: 500px;
+    min-height: 550px;
 }
-.about-us .about >div{
+.about-us .about >div,
+.our-work .work >div {
     width: 50%;
 }
-.about-us .about .image {
+.about-us .about .image, 
+.our-work .work .image {
     background-image: url("../images/about.png");
     background-size: cover;
     background-position: center center;
@@ -198,7 +201,8 @@ body {
     color: #fff;
     position: relative;
 }
-.about-us .about .about-content .cont {
+.about-us .about .about-content .cont,
+.our-work .work .work-content .cont {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -208,19 +212,22 @@ body {
 .about-us .about .about-content span {
     font-weight: bold;
 }
-.about-us .about .about-content h2 {
+.about-us .about .about-content h2,
+.our-work .work .work-content h2 {
     font-size: 27px;
     letter-spacing: 3px;
     margin-bottom: 30px;
 }
-.about-us .about .about-content p {
+.about-us .about .about-content p,
+.our-work .work .work-content p {
     color: #C9C9C9;
     font-size: 15px;
     font-weight: 400;
     margin-bottom: 14px;
     line-height:1.6
 }
-.about-us .about .about-content q {
+.about-us .about .about-content q ,
+.our-work .work .work-content q{
     display: block;
     color: #BEC6C9;
     margin-top: 20px;
@@ -232,17 +239,19 @@ body {
     padding-bottom: 10px;
 }
 @media(max-width: 992px) {
-    .about-us .about >div{
+    .about-us .about >div,
+    .our-work .work >div{
         width: 100%;
     }
 }
 @media(max-width: 767px) {
-    .about-us .about .about-content h2 {font-size:22px; letter-spacing:1px}
+    .about-us .about .about-content h2,
+    .our-work .work .work-content h2{font-size:22px; letter-spacing:1px}
 }
 /* end about us section */
 /* start section featured */
 .featured {
-    padding: 100px 0;
+    padding: 100px 0 30px;
 }
 .featured .head-content {
     margin-bottom:60px
@@ -301,3 +310,33 @@ body {
     padding: 10px 25px;
 }
 /* end section featured */
+/* start section our work */
+.our-work .work .image {
+    background-image: url("../images/work.png");
+    border-radius: 20px 0 0 20px;
+}
+.our-work .work .work-content .cont {margin-left: 100px;}
+.our-work .work .work-content {position: relative;}
+.our-work .work .work-content p {color: #707070; margin-bottom: 40px;}
+.our-work .work .work-content q{color: #1F1F1F}
+.our-work .work .work-content .my-button {
+    font-size: 25px;
+    height:60px;
+    width: 60px;
+    line-height:60px;
+    border-radius: 50%;
+    padding:0;
+    text-align: center;
+    margin-right: 15px;
+}
+.our-work .work .work-content span {
+    font-size: 20px;
+    color: #1F1F1F;
+}
+@media(max-width: 992px) {
+    .our-work .work .work-content .cont{margin-left: 20px}
+}
+@media(max-width: 768px) {
+    .our-work .work .work-content .cont{margin-left: 0px}
+    .our-work .work .work-content span{font-size: 16px}
+}
