@@ -6,4 +6,10 @@ $(document).ready(function() {
             $(".navbar-default").css("background-color","transparent");
         }
     });
+    $(".featured .feat-content").mouseenter(function() {
+        $(this).find(".cont").fadeIn();
+    });
+    $(".featured .feat-content").mouseleave(function() {
+        $(this).find(".cont").fadeOut();
+    });
 }); 
