@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto Mono', monospace;
-    height: 10000px;
+    overflow-x: hidden;
 }
 * {
     margin: 0;
@@ -255,11 +255,13 @@ body {
     padding: 100px 0 30px;
 }
 .featured .head-content,
-.our-team .head-content {
+.our-team .head-content,
+.contact .head-content {
     margin-bottom:60px
 }
 .featured .head-content h3 ,
-.our-team .head-content h3{
+.our-team .head-content h3,
+.contact .head-content h3 {
     font-size: 40px;
     line-height: 52px;
     font-weight: 400;
@@ -269,7 +271,8 @@ body {
     padding-bottom: 15px;
 }
 .featured .head-content p,
-.our-team .head-content p{
+.our-team .head-content p,
+.contact .head-content p{
     font-size: 16px;
     color: #727272;
     line-height: 28px;
@@ -445,4 +448,94 @@ body {
 }
 @media(max-width:767px) {
     .testimonial .carousel { min-width:270px}
+}
+/* end testimonials */
+
+/* start contact us */
+.contact {
+    padding:60px 0
+}
+.contact form .row >div {
+    margin-bottom:20px
+}
+.contact form .row >div input ,
+.contact form .row >div textarea {
+    font-size: 17px;
+    padding: 20px 15px;
+    border-radius: 20px;
+}
+.contact form .row >div textarea {
+    min-height:150px
+}
+.contact form .row >div input[type="submit"] {
+    height: auto;
+    padding: 15px;
+    color: #fff;
+    font-size: 19px;
+}
+.contact form .row >div input[type="submit"]:hover {color:#615CFD}
+/* end contact us */
+/* start footer */
+footer {
+    background-color: #1F1F1F;
+    padding: 50px 0;
+}
+footer .foot-top {
+    padding-bottom: 20px;border-bottom: 1px solid #ccc;
+}
+footer .foot-top .row div:nth-of-type(2) ul li {
+    display: inline-block;
+    padding:8px 10px;
+}
+footer .foot-top .row div:nth-of-type(2) ul li a {
+    color: #fff;
+    font-size: 17px;
+}
+footer .foot-top .row div:nth-of-type(2) ul li a:hover {
+    text-decoration: none;
+    color: #615CFD
+}
+@media(max-width:768px) {
+    footer .foot-top .row div:nth-of-type(2) ul li {
+        padding:8px 5px;
+    }
+    footer .foot-top .row div:nth-of-type(2) ul li a {
+        font-size:14px;
+    }
+    footer .foot-top .row div:nth-of-type(2) ul {
+        margin-top: 20px;
+        margin-bottom:10px
+    }
+}
+footer .foot-top .row div:nth-of-type(3) ul li {
+    display: inline-block;
+    height:50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition:.3s all ease-in-out;
+}
+footer .foot-top .row div:nth-of-type(3) ul li:hover {
+    border: 1px solid #615CFD;
+    transform: scale(1.1);
+}
+footer .foot-top .row div:nth-of-type(3) ul li a {
+    color: #fff;
+    font-size: 18px;
+    transition:.3s all ease-in-out;
+}
+footer .foot-top .row div:nth-of-type(3) ul li a:hover {
+    color: #615CFD;
+}
+footer .copy {
+    padding-top: 20px;
+    color: #C9C9C9;
+    line-height:1.6
+}
+footer .copy span {
+    color: #615CFD;
+    cursor: pointer;
 }
